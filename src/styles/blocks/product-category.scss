@@ -1,0 +1,45 @@
+.product-category__content {
+  order: 1;
+
+  @include desktop {
+    order: 2;
+    width: 776px;
+  }
+}
+
+.product-category__products {
+  display: flex;
+  flex-wrap: wrap;
+  order: 2;
+  margin-top: 38px;
+  padding-top: 47px;
+  border-top: 1px solid #ebebeb;
+
+  @include not-desktop {
+    padding-bottom: 30px;
+  }
+
+  @include desktop {
+    order: 3;
+  }
+}
+
+.product-category__section-heading {
+  margin: 0 0 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.product-category__description p {
+  margin: 0 0 15px;
+  line-height: 21px;
+}
+
+.product-category__products {
+  margin-left: -21px;
+}
+
+.product-category__product {
+  margin-left: 21px;
+  margin-bottom: 21px;
+}

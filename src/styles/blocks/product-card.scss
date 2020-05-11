@@ -1,0 +1,37 @@
+.product-card {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 1px 5px 1px #eaeaea;
+
+  @include mobile-landscape-320 {
+    width: 46%;
+  }
+
+  @include tablet {
+    width: 47%;
+  }
+
+  @include desktop {
+    width: 284px;
+  }
+}
+
+.product-card__link {
+  display: block;
+  padding: 38px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.product-card__picture {
+  height: 135px;
+  margin-bottom: 45px;
+}
+
+.product-card__name {
+  margin: 0 40px;
+  line-height: 22px;
+  font-weight: 600;
+}

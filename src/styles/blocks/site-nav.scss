@@ -1,0 +1,28 @@
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.site-nav li {
+  @include desktop {
+    margin-right: 81px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.site-nav a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1e1e1e;
+}

@@ -1,0 +1,35 @@
+@import "constants.scss";
+@import "mixins.scss";
+
+@import "normalize.scss";
+@import "common.scss";
+@import "visually-hidden.scss";
+@import "fonts.scss";
+
+@import "blocks/inner.scss";
+@import "blocks/heading.scss";
+@import "blocks/sr-only.scss";
+@import "blocks/logo.scss";
+@import "blocks/contact.scss";
+@import "blocks/lang.scss";
+@import "blocks/form.scss";
+@import "blocks/button.scss";
+@import "blocks/breadcrumbs.scss";
+
+@import "blocks/header.scss";
+
+@import "blocks/catalog-nav.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/header-hero.scss";
+@import "blocks/catalog.scss";
+@import "blocks/about-us.scss";
+@import "blocks/contacts.scss";
+
+@import "blocks/page-product-category.scss";
+@import "blocks/product-categories.scss";
+@import "blocks/product-category.scss";
+@import "blocks/product-card.scss";
+@import "blocks/page-product.scss";
+@import "blocks/product.scss";
+
+@import "blocks/page-footer.scss";

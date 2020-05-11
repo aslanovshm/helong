@@ -1,0 +1,76 @@
+.header-hero {
+  padding: 100px 0;
+  background-color: #5da2b1;
+  background-position: center;
+  background-image: url("../images/header-hero-index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include desktop {
+    padding: 148px 0 145px;
+  }
+}
+
+// header-hero для внутренних страниц
+.header-hero--page-inner {
+  text-align: center;
+
+  @include desktop {
+    padding: 94px 0 70px;
+  }
+}
+
+// Header-hero heading
+.header-hero__heading {
+  margin: 0;
+  font-size: 45px;
+  line-height: 52px;
+  text-transform: uppercase;
+  color: #ffffff; 
+
+  @include tablet {
+    font-size: 72px;
+    line-height: 82px;    
+  }
+}
+
+.header-hero__block-color {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 38px;
+  padding: 15px 29px;
+  font-size: 17px;
+  line-height: 25px;
+  background-color: $theme-color;
+
+  @include tablet {
+    margin-top: 25px;
+    margin-left: 100px;
+    padding: 22px 34px 18px 25px;
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+
+// Заголовок header-hero для внутренних страниц
+.header-hero--page-inner .header-hero__heading {
+  display: inline-block;
+  padding: 6px 22px;
+  font-size: 25px;
+  line-height: 32px;
+  background-color: $theme-color;
+
+  @include mobile-landscape-320 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  
+  @include tablet {
+    font-size: 50px;
+    line-height: 56px;
+  }
+}
+
+.header-hero--plasticizers {
+  background-image: url("../images/header-hero-plasticizers.jpg");
+}

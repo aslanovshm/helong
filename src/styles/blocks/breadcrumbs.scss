@@ -1,0 +1,24 @@
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  display: inline-block;
+  padding-right: 8px;
+  margin-right: 4px;
+
+  &:not(:last-child):after {
+    content: "/";
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: $text-color;
+}

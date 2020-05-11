@@ -1,0 +1,91 @@
+.contacts {
+  position: relative;
+  padding-top: 76px;
+  
+  @include tablet {
+    background-image: url("../images/cubs-tablet.png");
+    background-position: top 80px center;
+    background-repeat: no-repeat;
+  }
+  
+  @include desktop {
+    background-image: url("../images/cubs.png");
+    background-position: top 60px center;
+    background-repeat: no-repeat;
+  }
+
+  &:before {
+    content: "Helong";
+    position: absolute;
+    top: 60px;
+    left: -8px;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f2f5fb;
+    z-index: -1;
+
+    @include tablet {
+      font-size: 122px;
+      line-height: 122px;
+    }
+  }
+}
+
+.contacts__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__heading {
+  margin-bottom: 57px;
+}
+
+.contacts__form {
+  margin-bottom: 70px;
+}
+
+.contacts__form-field-message {
+  margin-bottom: 16px;
+}
+
+.contacts__form-submit {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+
+  @include desktop {
+    width: 409px;
+  }
+}
+
+.contacts__info {
+  padding: 42px 0 42px;
+  background-color: #f9fafd;
+}
+
+.contacts__item {
+  @include mobile-only {
+    margin-bottom: 20px;
+  }
+
+  @include mobile-landscape-320 {
+    width: 100%;
+    text-align: center;
+  }
+
+  @include tablet {
+    width: 30%;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}

@@ -1,0 +1,10 @@
+.button {
+  display: inline-block;
+  padding: 25px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.73);
+  background-color: $theme-color;
+  border-radius: 5px;
+  cursor: pointer;
+}

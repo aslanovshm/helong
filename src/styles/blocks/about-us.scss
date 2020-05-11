@@ -1,0 +1,49 @@
+.about-us {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f9fafd;
+  background-image: url("../images/bg-cubs.png");
+}
+
+.about-us__text {
+  position: relative;
+  padding-top: 380px;
+  font-size: 18px;
+  line-height: 22px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 290px;
+    height: 312px;
+    background-image: url("../images/laborant-mobile.png");
+  }
+
+  @include not-desktop {
+    &:before {
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  @include desktop {
+    padding-top: 94px;
+    padding-left: 600px;
+    width: 602px;
+
+    &:before {
+      top: 0;
+      left: 19px;
+      width: 483px;
+      height: 519px;
+      background-image: url("../images/laborant-desktop.png");
+    }
+  }
+
+  & p {
+    margin: 0 0 20px;
+  }
+}
